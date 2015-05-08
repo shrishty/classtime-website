@@ -1,0 +1,11 @@
+<?php
+	session_start();
+	if($_SESSION['sid']==session_id())
+	{	
+		header("location:index.php");	
+	}
+	else
+	{
+		header("location:login.php");
+	}
+?>
